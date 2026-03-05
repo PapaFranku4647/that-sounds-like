@@ -1,0 +1,15 @@
+paths:
+  artifacts_dir: artifacts
+  canonical_dir: artifacts/canonical
+  features_dir: artifacts/features
+  indexes_dir: artifacts/indexes
+  reports_dir: artifacts/reports
+  raw_dir: music_raw
+audio:
+  canonical_sample_rate: 24000
+  canonical_channels: 1
+  canonical_codec: flac
+  window_sec: 8.0
+  hop_sec: 4.0
+storage:
+  prefer_parquet: true

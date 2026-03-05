@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.pyo
+.tmp/
+music_raw/
+artifacts/canonical/*
+artifacts/features/*
+artifacts/reports/*
+artifacts/indexes/*
+!artifacts/canonical/.gitkeep
+!artifacts/features/.gitkeep
+!artifacts/reports/.gitkeep
+!artifacts/indexes/.gitkeep

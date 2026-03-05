@@ -1,0 +1,7 @@
+name: stats
+kind: stats
+default_profile: baseline_v1
+sample_rate: 24000
+window_sec: 8.0
+hop_sec: 4.0
+embedding_dim: 40

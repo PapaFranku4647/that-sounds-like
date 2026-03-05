@@ -1,0 +1,6 @@
+name,query_type,song_id,source_artist,target_artist,artist,artist_a,artist_b,top_k,expected_song_id,expected_artist,expected_album,expected_title,expected_song_id_a,expected_artist_a,expected_album_a,expected_title_a,expected_song_id_b,expected_artist_b,expected_album_b,expected_title_b,notes
+Beatles centroid to Floyd,centroid,,The Beatles,Pink Floyd,,,,10,,,,,,,,,,,,Seed query for psychedelic and melodic overlap
+Beatles centroid to Zeppelin,centroid,,The Beatles,Led Zeppelin,,,,10,,,,,,,,,,,,Seed query for cross-artist style contrast
+Most Zeppelin Zeppelin song,most_artist_like,,Led Zeppelin,,,,,5,,,,,,,,,,,,Within-artist centroid sanity check
+Most Floyd Daft Punk pair,pair,,,,,Pink Floyd,Daft Punk,1,,,,,,,,,,,,Cross-artist texture/production search
+Most Daft Punk Daft Punk song,most_artist_like,,Daft Punk,,,,,5,,,,,,,,,,,,Within-artist electronic production sanity check

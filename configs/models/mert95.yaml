@@ -1,0 +1,10 @@
+name: mert95
+kind: mert
+model_name: m-a-p/MERT-v1-95M
+default_profile: baseline_v1
+sample_rate: 24000
+window_sec: 8.0
+hop_sec: 4.0
+batch_size: 4
+layer: -1
+trust_remote_code: true

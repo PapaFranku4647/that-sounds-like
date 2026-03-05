@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "thatsoundslike"
+version = "0.1.0"
+description = "Local song similarity search and embedding pipeline."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "MIT" }
+authors = [
+  { name = "Codex" }
+]
+dependencies = [
+  "numpy>=1.26.0",
+  "pandas>=2.2.0",
+  "PyYAML>=6.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "ruff>=0.9.0",
+]
+ml = [
+  "torch>=2.6.0",
+  "transformers>=4.49.0",
+]
+analytics = [
+  "duckdb>=1.2.0",
+  "pyarrow>=18.0.0",
+]
+
+[project.scripts]
+tsl = "thatsoundslike.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/thatsoundslike"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "I",
+  "B",
+]

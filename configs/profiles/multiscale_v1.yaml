@@ -1,0 +1,18 @@
+name: multiscale_v1
+segment_grids:
+  - window_sec: 5.0
+    hop_sec: 2.5
+  - window_sec: 15.0
+    hop_sec: 7.5
+  - window_sec: 30.0
+    hop_sec: 15.0
+pooler: section_mean
+section_length_sec: 30.0
+layer_indices:
+  - -1
+  - -3
+  - -5
+duplicate_suppression: false
+reranker: none
+candidate_top_n: 50
+overwrite_embeddings: false

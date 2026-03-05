@@ -1,0 +1,14 @@
+name: benchmark_v1
+manifest: artifacts/indexes/library_manifest.csv
+targets:
+  - model: stats
+    profile: baseline_v1
+  - model: mert95
+    profile: baseline_v1
+  - model: mert95
+    profile: multiscale_v1
+  - model: music2vec
+    profile: baseline_v1
+named_queries: data/eval/named_queries.csv
+triplets: data/eval/human_triplets.csv
+output_name: benchmark_v1

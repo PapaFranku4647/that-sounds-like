@@ -1,0 +1,12 @@
+name: baseline_v1
+segment_grids:
+  - window_sec: 8.0
+    hop_sec: 4.0
+pooler: mean
+section_length_sec: 30.0
+layer_indices:
+  - -1
+duplicate_suppression: false
+reranker: none
+candidate_top_n: 50
+overwrite_embeddings: false
