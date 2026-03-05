@@ -18,7 +18,7 @@ def sample_hard_triplets(rows: pd.DataFrame, vectors: np.ndarray, count: int = 1
     artists = rows["artist"].fillna("").astype(str)
     triplets: list[dict[str, Any]] = []
     for anchor_index, anchor_row in rows.reset_index(drop=True).iterrows():
-        same_mask = (artists == artists.iloc[anchor_index]).to_numpy(dtype=bool)
+        same_mask = np.asarray((artists == artists.iloc[anchor_index]).to_numpy(), dtype=bool).copy()
         same_mask[anchor_index] = False
         diff_mask = ~same_mask
         diff_mask[anchor_index] = False
