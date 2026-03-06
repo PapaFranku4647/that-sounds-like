@@ -1,6 +1,9 @@
 # ThatSoundsLike
 
 ThatSoundsLike is a local Python project for song-level similarity search over full tracks.
+For the current authoritative implementation status and forward roadmap, see
+[`PROJECT_STATUS_AND_ROADMAP.md`](PROJECT_STATUS_AND_ROADMAP.md).
+
 It canonicalizes your audio library, embeds songs into a shared vector space, and answers
 queries like:
 
